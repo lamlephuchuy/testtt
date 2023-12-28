@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body, .wrapper{
+    height: 100%;
+}
+
+body{
+    height: 10px;
+    display: grid;
+    place-items: left;
+    margin: 0px 0px;
+    padding: 0 25px;
+    font-family: "ubuntu";
+    color: #000000;
+    gap: 2rem;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+
+}
+
+.menu > a > img{
+    width: 150%;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    max-width: 100%;
+    margin: 0; 
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+    background: rgb(128, 208, 240);
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.link a{
+    color:blue;
+    font-size: 25px;
+}
+
+.link a:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #050000;
+    transition: all 0.375s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn{
+    padding: 0px 10px;
+    text-align: center;
+    width: 10%;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #4e3fee;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #4e3feb;
+}
+
+.btn > a{
+    padding: 8px 26px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #4e3feb;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.375 ease;
+}
+
+.login-card{
+    z-index: 3;
+    width: 100%;
+    margin: 20px 50%;
+    padding: 40px 30px 44px;
+    border-radius: 1.25rem;
+    background: rgb(128, 208, 240);
+    text-align: center;
+    
+}
+
+.login-from > h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.login-from > h3{
+    color: rgb(0, 0, 0);
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.login-from > input, button{
+    width: 100%;
+    height: 40px;
+}
+
+.login-from{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.login-from > input{
+    border: 2px solid #a8a2a2;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 0 6px;
+    border-radius: 1.25rem;
+    transition: all 0.375s;
+}
+
+.login-from > button{
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    border-radius: 1.25rem;
+    background: #1a0ac9;
+    color: #ffffff;
+    border: 0;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.375;
+}
+
+.login-from > button > a{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 150px;
+    border-radius: 1.25rem;
+    background: #3a2aeb;
+    color: #ffffff;
+    border: 0;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.375;
+}
+
+.login-from > input:hover{
+    border: 2px solid #000000;
+}
+
+.login-from > a{
+    color: #1a0ac9c5;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 4px;
+    transition: all 0.375;
+}
+
+.login-from > a:hover{
+    color: #1a0ac9;
+}
+
+.video{
+    margin: 80px 35%;
+}
+
+@media (width >= 500px){
+    body{
+        padding: 0;
+    }
+    .login-card{
+        margin: 80px 40%;
+        width: 400px;
+    }
+    .btn{
+        margin: 10px 5%;
+        width: 100px 100px;
+        
+    }
+}

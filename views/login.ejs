@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <a href="#">
+                <img src="2.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="#">Search</a> </li>
+            <li class="link"><a href="#">Social</a> </li>
+            <li class="link"><a href="#">Forum</a> </li>
+        </ul>
+        <button class="btn">
+            <a href="/signup">
+            Sign up
+            </a>
+        </button>
+    </nav>
+    <div class="login-card">
+        <h2>Login</h2>
+        <h3>Enter your credentials</h3>
+            <from class="login-from">
+              <form action="/login" method="post"></form>
+              <input type="text" id="name" name="username" placeholder="Username" required autocomplete="off">
+              <input type="password" id="password" name="password" placeholder="Password">
+              <a href="#">Forget your password?</a>
+              <a href="/signup">Create new accout?</a>
+              <button type="submit">
+                <a href="/home">Login</a>
+              </button>
+            </form>
+        </from>
+    </div>
+</body>
+</html>
